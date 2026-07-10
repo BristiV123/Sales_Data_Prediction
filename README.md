@@ -1,7 +1,18 @@
-# Sales Data Analysis
+# 📊 Sales Data Analysis
 
 ## 📌 Project Overview
-This project analyzes sales data to identify top-selling products, city-wise sales, and overall business performance using Python.
+This project analyzes sales data using Python. It calculates total sales, identifies top-selling products, performs city-wise sales analysis, and visualizes the results using charts.
+
+---
+
+## 🎯 Objectives
+- Analyze sales data
+- Calculate total sales
+- Find the top-selling product
+- Compare sales across different cities
+- Create professional visualizations
+
+---
 
 ## 🛠 Technologies Used
 - Python
@@ -9,26 +20,91 @@ This project analyzes sales data to identify top-selling products, city-wise sal
 - Matplotlib
 - Seaborn
 
-## 📂 Dataset
-sales_data.csv
+---
 
-## 📊 Analysis Performed
+## 📂 Dataset
+**File:** `sales_data.csv`
+
+Columns:
+- Order_ID
+- Product
+- Category
+- Quantity
+- Price
+- City
+
+---
+
+## 📈 Features
 - Total Sales Calculation
 - Product-wise Sales Analysis
 - City-wise Sales Analysis
-- Top Selling Product Identification
-- Bar Chart Visualization
-- Pie Chart Visualization
+- Top Selling Product
+- Bar Chart
+- Pie Chart
+- Business Insights
 
-## 📈 Business Insights
+---
+
+## 📸 Project Screenshots
+
+### Product-wise Sales Chart
+
+![Product Sales](images/product_sales.png)
+
+### City-wise Sales Chart
+
+![City Sales](images/city_sales.png)
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository
+2. Install the required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the project
+
+```bash
+python sales_analysis.py
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+Sales_Data_Analysis/
+│
+├── sales_analysis.py
+├── sales_data.csv
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+└── images/
+    ├── product_sales.png
+    └── city_sales.png
+```
+
+---
+
+## 📊 Sample Output
+
 - Total Sales
-- Best Selling Product
-- Best Performing City
+- Product-wise Sales
+- City-wise Sales
+- Top Selling Product
+- Business Insights
 
-## 📁 Project Files
-- sales_analysis.py
-- sales_data.csv
-- README.md
+---
 
-## 🎯 Conclusion
-This project demonstrates how Python can be used to analyze sales data and generate useful business insights through data visualization.
+## 👩‍💻 Author
+
+**Bristi Ray**
+
+GitHub: https://github.com/BristiV123

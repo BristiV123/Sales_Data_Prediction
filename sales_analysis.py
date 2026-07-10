@@ -3,23 +3,28 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the CSV file
-data = pd.read_csv("sales_data.csv")
+try:
+    # Load dataset
+    data = pd.read_csv("sales_data.csv")
+    print("Dataset loaded successfully!")
+
+except FileNotFoundError:
+    print("Error: sales_data.csv file not found.")
+    exit()
+
+except Exception as e:
+    print("An error occurred:", e)
+    exit()
 
 # Display first 5 rows
 print(data.head())
 
-#Total Sales Coloumn
-# Create Total Sales column
+#Total_Sales And Top Selling Product
 data["Total_Sales"] = data["Quantity"] * data["Price"]
 
-# Display updated dataset
-print(data.head())
-
-#Total Sales And Top Selling Product
 # Calculate overall sales
 total_sales = data["Total_Sales"].sum()
-print("Total Sales:", total_sales)
+print("Total_Sales:", total_sales)
 
 # Calculate sales by product
 product_sales = data.groupby("Product")["Total_Sales"].sum()
@@ -35,7 +40,6 @@ print("\nTop Selling Product:", top_product)
 print("Top Sales:", top_sales)
 
 #Product-wise sales Bar Chart Create
-# Product-wise Sales Bar Chart
 
 product_sales.plot(kind="bar", figsize=(8,5))
 
@@ -77,6 +81,8 @@ city_sales.plot(
 
 plt.title("City-wise Sales Distribution")
 plt.ylabel("")
+plt.savefig("Product_sales.png", dpi=300, bbox_inches="tight")
+plt.savefig("city_sales.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 # Business Insights
@@ -92,3 +98,8 @@ print("Highest Sales:", top_sales)
 print("Best Performing City:", city_sales.idxmax())
 
 print("Sales in Best City:", city_sales.max())
+
+print("\n===== Business Insights =====")
+print(f"Total Revenue: ₹{total_sales}")
+print(f"Top Selling Product: {top_product}")
+print(f"Best Performing City: {city_sales.idxmax()}")
