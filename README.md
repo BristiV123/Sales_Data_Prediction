@@ -1,110 +1,39 @@
-# 📊 Sales Data Analysis
+# 📊 Sales Data Analysis & Prediction System
 
-## 📌 Project Overview
-This project analyzes sales data using Python. It calculates total sales, identifies top-selling products, performs city-wise sales analysis, and visualizes the results using charts.
+A Python-based Sales Data Analysis and Prediction project that performs data cleaning, exploratory data analysis, visualization, feature engineering, and machine learning.
 
----
+## 🚀 Project Overview
 
-## 🎯 Objectives
-- Analyze sales data
-- Calculate total sales
-- Find the top-selling product
-- Compare sales across different cities
-- Create professional visualizations
+This project analyzes sales data to understand:
 
----
+- Total sales
+- Product-wise sales
+- City-wise sales
+- Average and maximum sales
+- Sales distribution
+- Business insights
 
-## 🛠 Technologies Used
+The project also includes a Streamlit dashboard for interactive visualization and analysis.
+
+## 🛠️ Technologies Used
+
 - Python
 - Pandas
+- NumPy
 - Matplotlib
 - Seaborn
-
----
-
-## 📂 Dataset
-**File:** `sales_data.csv`
-
-Columns:
-- Order_ID
-- Product
-- Category
-- Quantity
-- Price
-- City
-
----
-
-## 📈 Features
-- Total Sales Calculation
-- Product-wise Sales Analysis
-- City-wise Sales Analysis
-- Top Selling Product
-- Bar Chart
-- Pie Chart
-- Business Insights
-
----
-
-## 📸 Project Screenshots
-
-### Product-wise Sales Chart
-
-![Product Sales](images/product_sales.png)
-
-### City-wise Sales Chart
-
-![City Sales](images/city_sales.png)
-
----
-
-## 🚀 How to Run
-
-1. Clone the repository
-2. Install the required libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the project
-
-```bash
-python sales_analysis.py
-```
-
----
+- Scikit-learn
+- Streamlit
+- Joblib
 
 ## 📁 Project Structure
 
 ```text
-Sales_Data_Analysis/
+Sales_Data_Prediction/
 │
 ├── sales_analysis.py
+├── app.py
 ├── sales_data.csv
-├── README.md
 ├── requirements.txt
-├── .gitignore
-├── LICENSE
-└── images/
-    ├── product_sales.png
-    └── city_sales.png
-```
-
----
-
-## 📊 Sample Output
-
-- Total Sales
-- Product-wise Sales
-- City-wise Sales
-- Top Selling Product
-- Business Insights
-
----
-
-## 👩‍💻 Author
-
-**Bristi Ray**
-
-GitHub: https://github.com/BristiV123
+├── README.md
+└── .gitignore
