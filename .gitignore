@@ -8,15 +8,19 @@ venv/
 .venv/
 env/
 
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
 # VS Code
 .vscode/
-
-# Jupyter Notebook
-.ipynb_checkpoints/
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Python cache
+# Temporary files
+*.tmp
 *.log

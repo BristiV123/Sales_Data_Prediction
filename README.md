@@ -1,37 +1,38 @@
-# 📊 Sales Data Analysis & Prediction System
+# AI-Powered Sales Intelligence & Prediction System
 
-A Python-based Sales Data Analysis and Prediction project that performs data cleaning, exploratory data analysis, visualization, feature engineering, and machine learning.
+An interactive Machine Learning and AI-powered sales analytics dashboard built with Python and Streamlit.
 
-## 🚀 Project Overview
+## 🚀 Features
 
-This project analyzes sales data to understand:
-
-- Total sales
-- Product-wise sales
-- City-wise sales
-- Average and maximum sales
-- Sales distribution
-- Business insights
-
-The project also includes a Streamlit dashboard for interactive visualization and analysis.
+- 📊 Sales and revenue analysis
+- 📈 Product, category and city-wise analysis
+- 🤖 Machine Learning-based sales prediction
+- 🌲 Random Forest, Gradient Boosting and Linear Regression
+- 📏 Model performance evaluation using MAE, MSE, RMSE and R²
+- 🔍 Feature importance analysis
+- 🚨 Anomaly detection using Isolation Forest
+- 🔮 Sales forecasting using Prophet
+- 🧠 AI-generated business insights
+- 📋 Forecast and prediction tables
+- 📥 CSV data download
+- 🎨 Interactive Streamlit dashboard
 
 ## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- Scikit-learn
 - Matplotlib
 - Seaborn
-- Scikit-learn
 - Streamlit
-- Joblib
+- Prophet
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Sales_Data_Prediction/
 │
-├── sales_analysis.py
 ├── app.py
 ├── sales_data.csv
 ├── requirements.txt
