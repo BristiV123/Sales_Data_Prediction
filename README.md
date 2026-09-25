@@ -2,6 +2,10 @@
 
 An interactive Machine Learning and AI-powered sales analytics dashboard built with Python and Streamlit.
 
+## 🚀 Live Demo
+
+👉 [Launch Sales Intelligence Dashboard](https://salesdataprediction-ymgzewgsmy8rq9kwddbnai.streamlit.app/)
+
 ## 🚀 Features
 
 - 📊 Sales and revenue analysis
